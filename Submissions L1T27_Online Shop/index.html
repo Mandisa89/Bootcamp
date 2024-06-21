@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Exercise: Houseplant Online Store</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- NAV BAR -->
+      <!-- LOGO and company name -->
+      <nav class="navbar navbar-light row">
+        <div class="container">
+          <a class="navbar-brand col-sm-8 col-md-8 d-inline-block" href="#">
+            <img
+              src="img/LOGO.png"
+              alt="logo"
+              width="30"
+              height="24"
+              class="align-text-centre logo"
+            />
+            <h1 class="d-inline-block">Local Home Nursery</h1>
+          </a>
+          <!-- Dropdown Menu -->
+          <div class="dropdown">
+            <button
+              class="btn btn-light dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Plant types
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Cacti</a></li>
+              <li><a class="dropdown-item" href="#">Succulents</a></li>
+              <li><a class="dropdown-item" href="#">Leafy Plants</a></li>
+            </ul>
+          </div>
+          <!-- Shopping Cart Button -->
+          <button class="btn align-content-end btn-light">
+            <img src="img/cart.svg" alt="" width="25" height="25" />
+          </button>
+        </div>
+      </nav>
+      <!-- END SHOPPING CART BUTTON -->
+    </header>
+    <!--  MAIN SECTION -->
+    <main>
+      <!-- CONTAINER OF 10 ITEMS -->
+      <div id="container-1" class="container-fluid">
+        <!-- ROW 1-->
+        <div class="row">
+          <!-- Column 1 inside Row 1.0-->
+          <div class="col-md-6">
+            <!-- PLANT 1 -->
+            <div class="col-md-12">
+              <figure class="text-center figure-caption">
+                <img
+                  id="plant-1"
+                  class="img-fluid img-thumbnail"
+                  src="img/feey-RHe-ebrSUTE-unsplash.jpg"
+                  alt="Houseplant in white pot"
+                />
+                <figcaption>Delicious Monster Baby</figcaption>
+                <p>R250</p>
+                <button type="button" class="btn btn-light add-to-cart">
+                  Add to cart
+                </button>
+              </figure>
+            </div>
+            <!-- PLANT 7 -->
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <figure class="text-center figure-caption">
+                  <img
+                    id="plant-7"
+                    class="img-fluid img-thumbnail"
+                    src="img/polina-silivanova-ywRYbp-6p8c-unsplash.jpg"
+                    alt="Medium cactus in terracotta pot"
+                  />
+                  <figcaption>Medium cactus in terracotta pot</figcaption>
+                  <p>R150</p>
+                  <button type="button" class="btn btn-light add-to-cart">
+                    Add to cart
+                  </button>
+                </figure>
+              </div>
+
+              <div class="col-sm-6 col-md-6">
+                <!-- PLANT 8 -->
+                <figure class="text-center figure-caption">
+                  <img
+                    id="plant-8"
+                    class="img-fluid img-thumbnail"
+                    src="img/sarah-bronske-rAyhYIqRvz8-unsplash.jpg"
+                    alt="Broad-leafed snake plant in pot"
+                  />
+                  <figcaption>Broad-leafed snake plant in pot</figcaption>
+                  <p>R250</p>
+                  <button type="button" class="btn btn-light add-to-cart">
+                    Add to cart
+                  </button>
+                </figure>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <!-- PLANT 9 -->
+                <figure class="text-center figure-caption">
+                  <img
+                    id="plant-9"
+                    class="img-fluid img-thumbnail"
+                    src="img/sarah-bronske-rGpZ6RKefXU-unsplash.jpg"
+                    alt="Snake plant in pot"
+                  />
+                  <figcaption>Snake plant in pot</figcaption>
+                  <p>R220</p>
+                  <button type="button" class="btn btn-light add-to-cart">
+                    Add to cart
+                  </button>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- END of Column 1 inside Row 1-->
+          <!-- Column 2 inside Row 1-->
+          <div class="col-md-6">
+            <!-- Row 1.1 inside Column 2-->
+            <div class="row justify-content-center">
+              <!-- Column 2.1 inside Row 1.1-->
+              <div class="col-sm-6 col-md-6">
+                <!-- PLANT 2 -->
+                <figure class="text-center figure-caption">
+                  <img
+                    id="plant-2"
+                    class="img-fluid img-thumbnail"
+                    src="img/feey-cLaaxa4DSnc-unsplash.jpg"
+                    alt="Spikey Houseplant in pot"
+                  />
+                  <figcaption>Spikey Houseplant in pot</figcaption>
+                  <p>R350</p>
+                  <button type="button" class="btn btn-light add-to-cart">
+                    Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- END of Column 2.1 inside Row 1.1 -->
+              <!-- Column 2.2 inside Row 1.1 -->
+              <div class="col-sm-6 col-md-6">
+                <!-- PLANT 3 -->
+                <figure class="text-center figure-caption">
+                  <img
+                    id="plant-3"
+                    class="img-fluid img-thumbnail"
+                    src="img/anna-yenina-GUCB-fsbe6g-unsplash.jpg"
+                    alt="Hardy Long-leaf Houseplant in pot"
+                  />
+                  <figcaption>Hardy Long-leaf Houseplant in pot</figcaption>
+                  <p>R270</p>
+                  <button type="button" class="btn btn-light add-to-cart">
+                    Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- END of Column 2.2 inside Row 1.1 -->
+            </div>
+            <!-- END of Row 1.1 inside Column 2-->
+
+            <!-- Row 1.2 inside Column 2 -->
+            <div class="row">
+              <!-- Column 2.1 inside Row 1.2 -->
+              <div class="col-md-12">
+                <!-- PLANT 4 -->
+                <figure class="text-center figure-caption">
+                  <img
+                    id="plant-4"
+                    class="img-fluid img-thumbnail"
+                    src="img/andrew-reshetov-f8tr3-MJzhc-unsplash.jpg"
+                    alt="Hardy houseplant with round leaves"
+                  />
+                  <figcaption>Hardy houseplant with round leaves</figcaption>
+                  <p>R230</p>
+                  <button type="button" class="btn btn-light add-to-cart">
+                    Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- END of Column 2.1 inside Row 1.2 -->
+            </div>
+            <!-- END of ROW 1.2 inside column 2 -->
+
+            <!-- ROW 1.3 inside column 2 -->
+            <div class="row">
+              <!-- Column 1 inside row 1.3 -->
+              <div class="col-sm-6 col-md-6">
+                <!-- PLANT 5 -->
+                <figure class="text-center figure-caption">
+                  <img
+                    id="plant-5"
+                    class="img-fluid img-thumbnail"
+                    src="img/annie-spratt-BJ1ewoSIdF8-unsplash.jpg"
+                    alt="Long-leaf Houseplant in pot"
+                  />
+                  <figcaption>Long-leaf Houseplant in pot</figcaption>
+                  <p>R350</p>
+                  <button type="button" class="btn btn-light add-to-cart">
+                    Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- END of Column 1 inside Row 1.3 -->
+              <!-- Column 2 inside Row 1.3 -->
+              <div class="col-sm-6 col-md-6">
+                <!-- PLANT 6 -->
+                <figure class="text-center figure-caption">
+                  <img
+                    id="plant-6"
+                    class="img-fluid img-thumbnail"
+                    src="img/nicolas-hippert-kfr_eSrR08M-unsplash.jpg"
+                    alt="Small cactus in pot"
+                  />
+                  <figcaption>Small cactus in pot</figcaption>
+                  <p>R150</p>
+                  <button type="button" class="btn btn-light add-to-cart">
+                    Add to cart
+                  </button>
+                </figure>
+              </div>
+              <!-- END of Column 2 inside Row 1.3 -->
+            </div>
+            <!-- END of Row 1.3 -->
+            <div class="row">
+              <!-- PLANT 10 -->
+              <figure class="text-center figure-caption">
+                <img
+                  id="plant-10"
+                  class="img-fluid img-thumbnail"
+                  src="img/feey-SVRKkENpalg-unsplash.jpg"
+                  alt="Heartleaf philodendron"
+                />
+                <figcaption>Heartleaf philodendron</figcaption>
+                <p>R250</p>
+                <button type="button" class="btn btn-light add-to-cart">
+                  Add to cart
+                </button>
+              </figure>
+            </div>
+          </div>
+          <!-- END of Column 2 inside Row 1 -->
+        </div>
+        <!-- END of Row 1 -->
+      </div>
+    </main>
+  </body>
+  <footer>
+    <!-- FORM -->
+    <div class="container justify-content-center">
+      <br />
+      <h6 class="text-center">
+        Would you like to receive our best tips and info on how to care for your
+        house plants, and our seasonal specials? <br /><br />Sign up for our
+        newsletter.
+      </h6>
+      <br />
+      <br />
+      <div class="row">
+        <form action="" method="get" class="row align-items-center text-center">
+          <div>
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div>
+            <label for="email">Enter your email: </label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div>
+            <input type="submit" value="Submit" class="btn btn-light submit" />
+          </div>
+        </form>
+        <div class="float-end">
+          <figure class="float-end">
+            <a href="#header"
+              ><img src="img/LOGO.png" alt="Logo" class="float-end logo"
+            /></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
+
+<!-- REFERENCES -->
+<!-- Tutorial Republic.2023. How to center buttons in Bootstrap. Retrieved on 14 April 2023 at https://www.tutorialrepublic.com/faq/how-to-center-buttons-in-bootstrap.php -->
+<!-- Bootstrap 5.2023. Bootstrap Home Page. Retrieved on 15 April at https://getbootstrap.com/-->
+
+<!-- UNSPLASH PHOTO CREDITS -->
+<!-- Photo "feey-RHe-ebrSUTE-unsplash.jpg" by <a href="https://unsplash.com/@feeypflanzen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">feey</a> on <a href="https://unsplash.com/s/photos/houseplant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo "feey-cLaaxa4DSnc-unsplash.jpg" by <a href="https://unsplash.com/@feeypflanzen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">feey</a> on <a href="https://unsplash.com/s/photos/houseplant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo "andrew-reshetov-f8tr3-MJzhc-unsplash.jpg" by <a href="https://unsplash.com/fr/@qoba?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrew Reshetov</a> on <a href="https://unsplash.com/s/photos/houseplant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo "feey-SVRKkENpalg-unsplash.jpg" by <a href="https://unsplash.com/@feeypflanzen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">feey</a> on <a href="https://unsplash.com/s/photos/houseplant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo "sarah-bronske-rGpZ6RKefXU-unsplash.jpg" by <a href="https://unsplash.com/@denimandrain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sarah Bronske</a> on <a href="https://unsplash.com/photos/rGpZ6RKefXU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo "sarah-bronske-rAyhYIqRvz8-unsplash.jpg" by <a href="https://unsplash.com/@denimandrain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sarah Bronske</a> on <a href="https://unsplash.com/s/photos/houseplant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo "polina-silivanova-ywRYbp-6p8c-unsplash.jpg" by <a href="https://unsplash.com/@linasilivanova?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Polina Silivanova</a> on <a href="https://unsplash.com/s/photos/houseplant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo "annie-spratt-BJ1ewoSIdF8-unsplash.jpg" by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/houseplant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo "nicolas-hippert-kfr_eSrR08M-unsplash.jpg" by <a href="https://unsplash.com/fr/@nhippert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nicolas HIPPERT</a> on <a href="https://unsplash.com/s/photos/houseplant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo "anna-yenina-GUCB-fsbe6g-unsplash.jpg" by <a href="https://unsplash.com/ja/@anna_yenina?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Anna Yenina</a> on <a href="https://unsplash.com/s/photos/houseplant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+
+<!-- FLATICON LOGO CREDIT -->
+<!-- <a href="https://www.flaticon.com/free-icons/plant" title="plant icons">Plant icons created by Made by Made - Flaticon</a> -->
+<!-- <a href="https://www.freepik.com/free-vector/set-vector-shopping-icons-black-white-with-cart-trolley-wallet-bank-card-shop-store-money-gift-delivery-bar-code-depicting-consumerism-retail-purchasing_10608601.htm#query=cart&position=1&from_view=search&track=sph">Image by macrovector</a> on Freepik -->

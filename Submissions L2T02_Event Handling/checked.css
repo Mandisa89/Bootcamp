@@ -1,0 +1,5 @@
+/*  Class "checked" to apply checked-off styling to checked-off list items*/
+
+.checked {
+  text-decoration: line-through;
+}

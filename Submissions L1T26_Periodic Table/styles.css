@@ -1,0 +1,499 @@
+/*-----------------------*/
+/*       GENERAL         */
+/*-----------------------*/
+
+html,
+body {
+  background-color: antiquewhite;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h3,
+h4,
+h5 {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*-----------------------*/
+/*        HEADER         */
+/*-----------------------*/
+
+header h1 {
+  margin: 20px auto 0px;
+  text-align: center;
+}
+
+/*-----------------------*/
+/*      CONTAINERS       */
+/*-----------------------*/
+
+/* contains main elements */
+#container-1 {
+  display: grid;
+  /* repeat(amount of times to repeat, value of measurement)*/
+  grid-template-columns: repeat(18, 1fr);
+  margin: -30px 40px;
+}
+
+#container-2 {
+  display: grid;
+  /* repeat(amount of times to repeat, value of measurement)*/
+  grid-template-columns: repeat(14, 1fr);
+  margin: 40px 100px;
+}
+
+#container-3 {
+  display: grid;
+  /* repeat(amount of times to repeat, value of measurement)*/
+  grid-template-columns: repeat(10, 1fr);
+  margin: -20px 100px;
+}
+
+#container-3 h4 {
+  padding: 5px;
+  text-align: center;
+}
+
+/*--------------------------------*/
+/*        SQUARE TILE DESIGN      */
+/*--------------------------------*/
+
+.description {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.description h4 {
+  padding-top: 0px;
+  padding-right: 10px;
+}
+
+element p {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.element {
+  display: grid;
+  grid-template-rows: auto;
+  height: 70px;
+  width: 70px;
+}
+
+.element-number {
+  font-size: 1vh;
+  text-align: left;
+}
+
+.symbol {
+  font-size: 2vw;
+  text-align: center;
+}
+
+.name {
+  font-size: 0.8vw;
+  text-align: center;
+}
+
+.atomic-weight {
+  font-size: 0.6vw;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*-------------------------*/
+/*     ELEMENT  TYPES      */
+/*-------------------------*/
+
+.actinide {
+  border: solid 3px rgb(146, 108, 68);
+  border-radius: 2px;
+  background-color: rgb(230, 202, 171);
+}
+
+.alkaline-earth {
+  border: solid 3px rgb(239, 137, 42);
+  border-radius: 2px;
+  background-color: rgb(249, 190, 135);
+}
+
+.alkali-metal {
+  border: solid 3px rgb(181, 45, 45);
+  border-radius: 2px;
+  background-color: rgb(233, 155, 155);
+}
+
+.basic-metal {
+  border: solid 3px rgb(177, 212, 101);
+  border-radius: 2px;
+  background-color: rgb(230, 252, 181);
+}
+
+.halogen {
+  border: solid 3px rgb(116, 116, 255);
+  border-radius: 2px;
+  background-color: rgb(175, 175, 239);
+}
+
+.lanthanide {
+  border: solid 3px rgb(93, 81, 65);
+  border-radius: 2px;
+  background-color: rgb(178, 145, 109);
+}
+
+.noble-gas {
+  border: solid 3px rgb(182, 116, 226);
+  border-radius: 2px;
+  background-color: rgb(219, 173, 249);
+}
+
+.non-metal {
+  border: solid 3px rgb(99, 187, 225);
+  border-radius: 2px;
+  background-color: rgb(176, 226, 247);
+}
+
+.semi-metal {
+  border: solid 3px rgb(53, 196, 206);
+  border-radius: 2px;
+  background-color: rgb(154, 242, 249);
+}
+
+.transition-metal {
+  border: solid 3px rgb(246, 204, 15);
+  border-radius: 2px;
+  background-color: rgb(246, 228, 146);
+}
+
+/*---------------------------------------*/
+/*          LEGEND TILES RESIZED         */
+/*---------------------------------------*/
+
+#container-3 div {
+  width: 50%;
+  height: 70%;
+}
+
+/*---------------------------------------*/
+/*              SYMBOL TILE              */
+/*---------------------------------------*/
+
+#symbol-legend {
+  grid-column: 8/9;
+  grid-row: 3;
+}
+
+#symbol-legend h3 {
+  font-size: 0.8vw;
+}
+
+#symbol-legend h5 {
+  font-size: 0.5vw;
+}
+
+.symbol-tile {
+  border: solid 3px rgb(147, 144, 141);
+  border-radius: 2px;
+  background-color: rgb(175, 175, 175);
+}
+
+/*------------------------------------------------------------------------*/
+/*                   CONTAINER 1 FIRST THREE ROW LAYOUT                   */
+/*------------------------------------------------------------------------*/
+
+#hydrogen {
+  grid-column: 1/1;
+  grid-row: 2;
+}
+
+#helium {
+  grid-column: 18/18;
+  grid-row: 2;
+}
+
+#lithium {
+  grid-column: 1/1;
+  grid-row: 3;
+}
+
+#beryllium {
+  grid-column: 2/2;
+  grid-row: 3;
+}
+
+#boron {
+  grid-column: 13/13;
+  grid-row: 3;
+}
+
+#carbon {
+  grid-column: 14/14;
+  grid-row: 3;
+}
+
+#nitrogen {
+  grid-column: 15/15;
+  grid-row: 3;
+}
+
+#oxygen {
+  grid-column: 16/16;
+  grid-row: 3;
+}
+
+#fluorine {
+  grid-column: 17/17;
+  grid-row: 3;
+}
+
+#neon {
+  grid-column: 18/18;
+  grid-row: 3;
+}
+
+#sodium {
+  grid-column: 1/1;
+  grid-row: 4;
+}
+
+#magnesium {
+  grid-column: 2/2;
+  grid-row: 4;
+}
+
+#aluminium {
+  grid-column: 13/13;
+  grid-row: 4;
+}
+
+#silicone {
+  grid-column: 14/14;
+  grid-row: 4;
+}
+
+#phosphorus {
+  grid-column: 15/15;
+  grid-row: 4;
+}
+
+#sulfur {
+  grid-column: 16/16;
+  grid-row: 4;
+}
+
+#chlorine {
+  grid-column: 17/17;
+  grid-row: 4;
+}
+
+#argon {
+  grid-column: 18/18;
+  grid-row: 4;
+}
+
+/*---------------------------------------------------*/
+/*                CONTAINER 1 ROW LAYOUT             */
+/*---------------------------------------------------*/
+
+.row-1 {
+  grid-row: 1;
+}
+
+.row-2 {
+  grid-row: 2;
+}
+
+.row-4 {
+  grid-row: 4;
+}
+
+.row-5 {
+  grid-row: 5;
+}
+
+.row-6 {
+  grid-row: 6;
+}
+
+.row-7 {
+  grid-row: 7;
+}
+
+.row-8 {
+  grid-row: 8;
+}
+
+/*---------------------------------------------------*/
+/*             CONTAINER 1 COLUMN LAYOUT             */
+/*---------------------------------------------------*/
+
+.col-13 {
+  grid-column: 13/13;
+}
+
+.col-14 {
+  grid-column: 14/14;
+}
+
+.col-15 {
+  grid-column: 15/15;
+}
+
+.col-16 {
+  grid-column: 16/16;
+}
+
+.col-17 {
+  grid-column: 17/17;
+}
+
+.col-18 {
+  grid-column: 18/18;
+}
+
+/*--------------------------------------------*/
+/*             CONTAINER 2 LAYOUT             */
+/*--------------------------------------------*/
+
+.con-2-row-1 {
+  grid-row: 9;
+}
+
+.con-2-row-2 {
+  grid-row: 10;
+}
+
+.con-2-row-3 {
+  grid-row: 11;
+}
+
+.con-2-row-4 {
+  grid-row: 12;
+}
+
+.con-3-row-1 {
+  grid-row: 1;
+}
+
+/*--------------------------------------------*/
+/*                   IMAGE                    */
+/*--------------------------------------------*/
+
+#image-for-mobile {
+  /* make image invisible until media prompt makes it visible */
+  display: none;
+}
+
+/*--------------------------------------------*/
+/*                MEDIA RESPONSES             */
+/*--------------------------------------------*/
+
+/* from larger screen to smallest */
+
+@media screen and (max-width: 1600px) {
+  .element {
+    display: grid;
+    grid-template-rows: auto;
+    height: 70px;
+    width: 70px;
+  }
+
+  .symbol {
+    font-size: 3.5vh;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 0.6vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .element {
+    display: grid;
+    grid-template-rows: auto;
+    height: 60px;
+    width: 60px;
+  }
+  .symbol {
+    font-size: 1.5vw;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 0.6vw;
+    text-align: center;
+  }
+
+  #container-1 {
+    margin-top: 30px;
+  }
+  #container-2 {
+    margin: 60px 100px;
+  }
+  #container-3 {
+    /* increase top margin */
+    margin: 0px 100px;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .element {
+    display: grid;
+    grid-template-rows: auto;
+    height: 55px;
+    width: 55px;
+  }
+
+  .name {
+    font-size: 0.57vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .element {
+    display: grid;
+    grid-template-rows: auto;
+    height: 50px;
+    width: 50px;
+  }
+
+  .element-number {
+    font-size: 1vh;
+    text-align: left;
+  }
+
+  .symbol {
+    font-size: 1.6vw;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 0.53vw;
+    text-align: center;
+  }
+}
+
+/* display periodic table as a png up to a certain size */
+@media screen and (max-width: 1000px) {
+  header {
+    display: none;
+  }
+
+  main {
+    display: none;
+  }
+
+  #image-for-mobile {
+    /* make image visible */
+    display: inline-block;
+    /* make image the size of the screen */
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,220 @@
+/*-----------------------*/
+/*       GENERAL         */
+/*-----------------------*/
+
+html,
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*-----------------------*/
+/*          NAV          */
+/*-----------------------*/
+
+nav {
+  padding: 10px;
+}
+
+.logo {
+  border: solid black 1px;
+  border-radius: 20px;
+  width: 60px;
+  height: auto;
+  margin: 5px;
+  padding: 3px;
+}
+
+nav h3 {
+  font-size: 18px;
+  padding-right: 20px;
+  margin-bottom: 0rem;
+}
+
+/*-----------------------*/
+/*     TITLE SECTION      */
+/*-----------------------*/
+#title-section {
+  border-top: solid 10px rgb(97, 40, 38); /* solid 10px rgb(3, 36, 33); */
+  border-bottom: solid 10px rgb(130, 99, 6);
+
+  height: 40vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+#bg-img-filter {
+  background-image: url("../images/johannesburg-city.jpg");
+  background-position: 30% 48%; /* position background image so the flag and wall text are centered */
+  filter: brightness(
+    70%
+  ); /* darken the background image to make text legible */
+
+  height: 100%;
+  width: 100%;
+}
+
+#title-text-bg {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* darken the background strip further to make text legible */
+  height: 15vh;
+  position: relative; /* reposition the text over the background image */
+  top: -70%; /* reposition the text over the background image */
+  padding: 10px;
+}
+
+h1,
+h2 {
+  position: relative; /* reposition the text over the background image */
+  top: -105%; /* reposition the text over the background image */
+  color: aliceblue;
+}
+
+/*-----------------------*/
+/*         MAIN          */
+/*-----------------------*/
+
+main h4 {
+  margin: 100px 10px 50px 0px;
+}
+
+/*-----------------------*/
+/*         CARDS         */
+/*-----------------------*/
+.card-deck {
+  padding-top: 50px;
+}
+
+.card {
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+h5.card-title {
+  margin: 10px 0px;
+}
+
+h6.card-subtitle {
+  margin: 5px 0px 10px;
+}
+
+.card-title,
+.card-subtitle,
+.card-text {
+  padding: 10px 10px 50px 10px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 350px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#resources-card-group .card .row a {
+  width: 200px; /* keep card small */
+}
+
+#resources-card-group .card .row a img {
+  margin: auto 0px;
+}
+
+.agency-card {
+  height: auto;
+  width: 50px;
+}
+
+#agency-card-group div a {
+  margin: auto 0px; /* position non-square images in centre of card */
+}
+
+/*-----------------------*/
+/*         TABLE         */
+/*-----------------------*/
+
+#table-section {
+  padding: 0px 100px;
+}
+
+#table-section div {
+  margin-bottom: 30px;
+}
+
+.table-heading {
+  background-color: rgb(2, 28, 27);
+  color: white;
+}
+
+.table-red {
+  border: solid 3px rgb(97, 40, 38);
+  color: black;
+}
+
+.table-gold {
+  border: solid 3px rgb(130, 99, 6);
+  color: black;
+}
+
+.table-green {
+  border: solid 3px rgb(2, 28, 27);
+  color: black;
+}
+
+/*-----------------------*/
+/*      TESTIMONIAL      */
+/*-----------------------*/
+#testimonial-section {
+  margin: 110px;
+}
+
+#testimonial-1,
+#testimonial-2 {
+  border: solid 5px rgb(130, 99, 6);
+  background-color: rgb(242, 240, 232);
+}
+
+/*-----------------------*/
+/*         FOOTER        */
+/*-----------------------*/
+
+#page-footer {
+  border-top: solid 1px lightgray;
+  margin: 100px 50px 10px;
+}
+
+div .form-check {
+  margin: auto;
+  width: 30%;
+}
+
+form input {
+  margin: 5px;
+}
+
+form label {
+  width: 150px;
+  text-align: left;
+}
+
+#radio-form {
+  margin-top: 30px;
+}
+
+#form-submit-btn {
+  padding: 10px;
+  margin: 10px auto;
+  width: 200px;
+}
+/*-----------------------*/
+/*      REFERENCES       */
+/*-----------------------*/
+
+/* Lemonaki, D. 2021. FreecodeCamp - CSS Background Image – With HTML Example Code. Retrieved on 9 May 2023 at https://www.freecodecamp.org/news/css-background-image-with-html-example-code/        */
+/* Patro, Diksha. 2023. Tutorialspoint. How to darken an image using CSS? Retrieved on 11 May 2023 at https://www.tutorialspoint.com/how-to-darken-an-image-using-css*/
+/* Ashrafi, Nazanin. 2020. Dev.to: How to Darken an Image with CSS. Retrieved on 11 May 2023 at https://dev.to/nazanin_ashrafi/how-to-darken-an-image-with-css-4f5h */

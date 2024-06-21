@@ -1,0 +1,18 @@
+Mandisa Macleod 
+11 January 2023
+
+
+L1T01
+
+Thinking Like A Programmer - Pseudo Code
+
+
+
+Optional Task 
+
+* Request user input of an integer
+* Repeat request if input is not a number, not an integer, or if it's a negative integer, or zero.
+* Store input in variable called n
+* Test if n is prime number (is it divisible by more than itself and 1?)
+* If n is a prime number, output "Prime".
+* Else, print "Not Prime".

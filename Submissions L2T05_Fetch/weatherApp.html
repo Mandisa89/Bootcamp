@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paris Current Weather</title>
+  </head>
+  <header>
+    <h1>Current Weather Report</h1>
+    <h2>Paris, France</h2>
+  </header>
+  <div id="weatherDetails">
+    <p class="p_weatherDetail">Day/Night: <span id="is_day"> </span></p>
+    <p class="p_weatherDetail">Time: <span id="time"> </span></p>
+    <p class="p_weatherDetail">
+      Temperature: <span id="temperature"> </span>°C
+    </p>
+
+    <p class="p_weatherDetail">Weather Code: <span id="weathercode"> </span></p>
+    <p class="p_weatherDetail">
+      Wind Direction: <span id="winddirection"> </span>°
+    </p>
+    <p class="p_weatherDetail">Windspeed: <span id="windspeed"> </span>km/h</p>
+  </div>
+  <body>
+    <script language="JavaScript">
+      fetch(
+        "https://api.open-meteo.com/v1/forecast?latitude=48.8534&longitude=2.3488&hourly=temperature_2m&current_weather=true&timezone=GMT"
+      )
+        .then((res) => res.json())
+        .then((result) => {
+          // error handling for invalid url
+          if (result.error) {
+            throw new Error(result.reason);
+          }
+          console.log(result);
+          let currentWeather = result.current_weather;
+          console.log(currentWeather);
+
+          // iterate through each property of the object using a for...in loop (for...Each and map() only work on arrays) [MDN "for...in", 2023]
+          for (const property in currentWeather) {
+            let element = document.getElementById(property);
+            console.log(element);
+            if (element) {
+              if (property === "is_day") {
+                if (currentWeather[property] === 1) {
+                  element.textContent = " Day";
+                } else {
+                  element.textContent = " Night";
+                }
+              } else if (property === "weathercode") {
+                switch (currentWeather[property]) {
+                  case 0:
+                    element.textContent = "Clear Sky";
+                    break;
+                  case 1:
+                    element.textContent = "Mainly clear";
+                    break;
+                  case 2:
+                    element.textContent = "Partly Cloudy";
+                    break;
+                  case 3:
+                    element.textContent = "Overcast";
+                    break;
+                  case 45:
+                    element.textContent = "Fog and depositing rime fog";
+                  case 48:
+                    break;
+                  case 51:
+                    element.textContent = "Light Drizzle";
+                    break;
+                  case 53:
+                    element.textContent = "Moderate Drizzle";
+                    break;
+                  case 55:
+                    element.textContent = "Dense Drizzle";
+                    break;
+                  case 56:
+                    element.textContent = "Light Freezing Drizzle";
+                    break;
+                  case 57:
+                    element.textContent = "Dense Freezing Drizzle";
+                    break;
+                  case 61:
+                    element.textContent = "Slight Rain";
+                    break;
+                  case 63:
+                    element.textContent = "Moderate Rain";
+                    break;
+                  case 65:
+                    element.textContent = "Intense Rain";
+                    break;
+                  case 66:
+                    element.textContent = "Light Freezing Rain";
+                    break;
+                  case 67:
+                    element.textContent = "Heavy Freezing Rain";
+                    break;
+                  case 71:
+                    element.textContent = "Slight Snow Fall";
+                    break;
+                  case 73:
+                    element.textContent = "Moderate Snow Fall";
+                    break;
+                  case 75:
+                    element.textContent = "Heavy Snow Fall";
+                    break;
+                  case 77:
+                    element.textContent = "Snow grains";
+                    break;
+                  case 80:
+                    element.textContent = "Slight Rain Showers";
+                    break;
+                  case 81:
+                    element.textContent = " Moderate Rain Showers";
+                    break;
+                  case 82:
+                    element.textContent = "Violent Rain Showers";
+                    break;
+                  case 85:
+                    element.textContent = "Slight Snow Showers";
+                    break;
+                  case 86:
+                    element.textContent = "Heavy Snow Showers";
+                    break;
+                  case 95:
+                    element.textContent = "Thunderstorm: slight/moderate";
+                    break;
+                  case 96:
+                    element.textContent = "Thunderstorm with slight hail";
+                    break;
+                  case 96:
+                    element.textContent = "Thunderstorm with heavy hail";
+                    break;
+                  default:
+                    element.textContent = "Error";
+                }
+              } else {
+                element.textContent = currentWeather[property];
+              }
+            }
+          }
+        }),
+        (error) => {
+          console.log(`Error:`, error);
+        };
+    </script>
+  </body>
+</html>
+
+<!-- REFERENCES -->
+<!-- MDN, 2023. for... in. Retrieved on 23 August 2023 at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in -->
+<!-- Geeks for Geeks, 2023. HTML Collection for Loop. Retrieved on 23 August 2023 at https://www.geeksforgeeks.org/htmlcollection-for-loop/-->
+<!-- Open Meteo, 2023. Weather Forecast API. Retrieved on 23 August 2023 at https://open-meteo.com/en/docs#latitude=48.8534&longitude=2.3488&hourly=temperature_2m&daily=&current_weather=true&timezone=GMT-->

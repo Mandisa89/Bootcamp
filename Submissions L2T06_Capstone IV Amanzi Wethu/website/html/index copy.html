@@ -1,0 +1,396 @@
+<!-- Within the entirety of your site, you should have the following JavaScript functionality:
+○ Create a functional “Save for later” page for your website, where users can earmark articles, images, recipes, etc. in a personal folder to be able to go back and see them later.
+○ Each item/recipe/image, etc. must have the option to “Save for later”.
+○ When an item is added, an alert should tell the user how many items
+are in their “Save for later” folder.
+○ Create a new HTML page for the “Save for later” section, which allows
+the user to see what is in their folder.
+○ Create a form which allows a user to leave comments.
+○ Create forms to allow a user to “like” an item/article/etc.
+○ Create forms for if a person would like to contact you. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- LINK BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- LINK BOOTSTRAP ICON LIBRARY -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Natural Pool Conversion</title>
+  </head>
+  <!-- ONLOAD DOES WHAT? -->
+  <body onload="loadIndex()" class="container-fluid col-md-10">
+    <header>
+      <!-- HEADER -->
+      <br />
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../html/index.html">
+            <i class="bi bi-droplet-fill"></i>
+            Amanzi Awethu
+          </a>
+          <ul class="nav nav-pills justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link success" href="../html/archive.html"
+                >Archive</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/savedForLater.html"> Saved </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <br />
+    <div class="container text-bg-light rounded">
+      <!-- HEADING: Natural Pool Conversion -->
+      <h2>
+        COPY Natural Water-Body Maintenance Information - Accessible to everyone
+      </h2>
+      <br />
+      <!-- INTRO TO THE SITE -->
+      <section id="intro">
+        <p>
+          Amanzi awethu is a South African-based NGO dedicated to collecting and
+          spreading the knowledge of the benefit of maintaining bodies of water
+          (private pools and ponds, as well as public pools, ponds, lakes and
+          dams) through the implementation of a natural ecosystem of sediments
+          and plants to filter the water.
+        </p>
+        <p>No chemicals, no power-hungry pool pumps required.</p>
+
+        <p>
+          Join us on this journey of rediscovering how nature keeps itself
+          healthy and balanced, and how we can adopt those mechanisms to create
+          and maintain pools at home that are not only low-tech, low-energy and
+          low-cost in the long run, but provide an microcosmic oasis to your
+          local wildlife - be they pets, birds and butterflies, or amphibians
+          and even larger mammals.
+        </p>
+        <p>
+          Due to the colonial-style town planning and hot climate South Africa,
+          private pools are a prevalent feature in suburban middle-class homes
+          or living estates.
+        </p>
+        <p>
+          It can be easy to ignore the fact that we live on a water-scarce
+          continent, a state of mind which is mollified by the normality of poor
+          infrastructure maintenance resulting in frequent displays of burst
+          pipes creating rivers of fresh water on our streets, or the accepted
+          reality of raw sewerage and waste running from
+          service-delivery-deprived townships into our rivers and oceans.
+        </p>
+        <p>
+          As water-outages and the decline in water security become an
+          increasingly prevalent issue, learn with us as we move away from the
+          use of expensive chemicals that turn pools into basins filled with
+          multiple hundred litres of toxic, undrinkable water, and head towards
+          an easy, natural system that transforms pools into large reservoirs of
+          clean, safe, potable water.
+        </p>
+
+        <p>
+          While change starts at home, and is most easily done there, this
+          knowledge can also be used to nurture a public body of water in your
+          very own community back to health, restoring a thriving ecosystem and
+          ensuring public access to a source of safe, clean water for all to
+          benefit from.
+        </p>
+        <br />
+      </section>
+    </div>
+    <br /><br />
+    <!-- <section> containing articles -->
+    <div id="article-preview-list" class="container text-centre">
+      <h3>Recent Articles</h3>
+      <br />
+      <!-- MAIN ARTICLE 1 PREVIEW (more dominant layout). Picture, title and author -->
+      <div class="row">
+        <div id="featured-article" class="card col-md-12">
+          <img
+            id="featured-article-thumbnail"
+            src=""
+            class="card-img-top"
+            alt="natural pool"
+          />
+
+          <div class="card-body">
+            <h5 id="featured-article-title" class="card-title">Title</h5>
+            <p id="featured-article-contentPreview" class="card-text">
+              contentPreview
+            </p>
+            <p id="featured-article-author" class="card-text small"></p>
+            <!-- USER INTERACTION BUTTONS -->
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <!-- "READ MORE" BUTTON. Navigates to article page on click in same tab -->
+              <a href="location" class="btn btn-outline-success" role="button"
+                >Read more</a
+              ><!-- give anchor tag a role of button, since Bootstrap button class is used, to aid screenreader understand its purpose-->
+
+              <!-- "LIKE" BUTTON. set property value to "liked"? -->
+              <form action="">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="feature-article-like-btn"
+                  autocomplete="off"
+                />
+                <label
+                  class="btn btn-outline-danger"
+                  for="feature-article-like-btn"
+                  ><i class="bi bi-heart"></i
+                ></label>
+              </form>
+              <br />
+              <!-- "SAVE FOR LATER" BUTTON. Alert of number of items in savedForLater folder -->
+              <form action="">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="feature-article-save-btn"
+                  autocomplete="off"
+                />
+                <label
+                  class="btn btn-outline-primary"
+                  for="feature-article-save-btn"
+                  ><i class="bi bi-bookmark"></i> Save</label
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECOND ARTICLE PREVIEW  -->
+      <div class="row align-items-start">
+        <div id="second-featured-article" class="card col-6">
+          <img
+            src="../images/article-2/large-pool-kids-swimming.jpeg"
+            class="card-img-top"
+            alt="natural pool"
+            height="300px"
+          />
+
+          <div class="card-body">
+            <h5 class="card-title">Natural Pool</h5>
+            <p class="card-text">
+              Swimming in a Natural pool among flowering plants of lilies, iris
+              and marsh marigolds is a celebration of life. Soothing your limbs
+              and mind and skin and eyes, it seems...
+            </p>
+            <p class="card-text small">by David Pagan Butler</p>
+            <!-- USER INTERACTION BUTTONS -->
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <!-- "READ MORE" BUTTON. Navigates to article page on click in same tab -->
+              <a
+                href="./posts/2.html"
+                class="btn btn-outline-success"
+                role="button"
+                >Read more</a
+              ><!-- give anchor tag a role of button, since Bootstrap button class is used, to aid screenreader understand its purpose-->
+
+              <!-- "LIKE" BUTTON. set property value to "liked"? -->
+              <form action="">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="second-feature-like-btn"
+                  autocomplete="off"
+                />
+                <label
+                  class="btn btn-outline-danger"
+                  for="second-feature-like-btn"
+                  ><i class="bi bi-heart"></i
+                ></label>
+              </form>
+              <br />
+              <!-- "SAVE FOR LATER" BUTTON. Alert of number of items in savedForLater folder -->
+              <form action="">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="second-feature-save-btn"
+                  autocomplete="off"
+                />
+                <label
+                  class="btn btn-outline-primary"
+                  for="second-feature-save-btn"
+                  ><i class="bi bi-bookmark"></i> Save</label
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- THIRD ARTICLE PREVIEW -->
+
+        <div id="third-feature-article" class="card col-6">
+          <img
+            src="../images/article-3/pic-1.jpeg"
+            class="card-img-top"
+            alt="natural pool"
+            height="300px"
+          />
+
+          <div class="card-body">
+            <h5 class="card-title">
+              What are Floating Treatment Wetlands (FTW)?
+            </h5>
+            <p class="card-text">
+              A sustainable and environment-friendly approach is quickly taking
+              hold as an efficient and long-lasting remedy for the rising
+              pollution in urban water bodies. The man-made islands...
+            </p>
+            <p class="card-text small">by LakesOfIndia</p>
+            <!-- USER INTERACTION BUTTONS -->
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <!-- "READ MORE" BUTTON. Navigates to article page on click in same tab -->
+              <a
+                href="./posts/3.html"
+                class="btn btn-outline-success"
+                role="button"
+                >Read more</a
+              ><!-- give anchor tag a role of button, since Bootstrap button class is used, to aid screenreader understand its purpose-->
+
+              <!-- "LIKE" BUTTON. set property value to "liked"? -->
+              <form action="">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="third-feature-like-btn"
+                  autocomplete="off"
+                />
+                <label
+                  class="btn btn-outline-danger"
+                  for="third-feature-like-btn"
+                  ><i class="bi bi-heart"></i
+                ></label>
+              </form>
+              <br />
+              <!-- "SAVE FOR LATER" BUTTON. Alert of number of items in savedForLater folder -->
+              <form action="">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="third-feature-save-btn"
+                  autocomplete="off"
+                />
+                <label
+                  class="btn btn-outline-primary"
+                  for="third-feature-save-btn"
+                  ><i class="bi bi-bookmark"></i> Save</label
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!-- Button "see all previous articles". Navigates to archive.html page on click in same tab-->
+    <a href="./archive.html" class="btn btn-outline-success" role="button"
+      >See all articles <i class="bi bi-arrow-right"></i>
+    </a>
+    <!-- end of </section> containing articles -->
+    <section id="img-gallery">
+      <!-- GALLERY of materials one can use in natural pool -->
+      <!-- Examples of converted pools -->
+      <!-- Button "visit original source" links to original site in new tab-->
+      <!-- Button "save for later". Alert of number of items in savedForLater folder -->
+      <!-- allow user to comment -->
+      <!-- Useful plants-->
+      <!-- Useful sediment -->
+      <!-- Useful pumps, plumbing, etc -->
+    </section>
+    <br /><br />
+    <!-- MAIN CONTACT FORM -->
+    <form action="">
+      <div id="contact" class="container-fluid text-bg-light rounded">
+        <br />
+        <div class="container row">
+          <div class="col-md-6">
+            <h3>Contact Us</h3>
+            <!-- EMAIL ADDRESS INPUT -->
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+                autocomplete="on"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <!-- SUBJECT LINE INPUT -->
+            <div class="form-floating">
+              <input
+                type="subject"
+                class="form-control"
+                id="floatingSubject"
+                placeholder="Subject"
+              />
+              <label for="floatingSubject">Subject</label>
+            </div>
+            <br />
+            <!-- NEWSLETTER SIGN-UP -->
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Subscribe to our newsletter!
+              </label>
+              <br /><br />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Message</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+              <br />
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- FOOTER -->
+    <footer class="text-center">© Amanzi Awethu 2023</footer>
+    <!-- link to js file -->
+    <script type="text/javascript" src="../scripts/website.js"></script>
+  </body>
+</html>
+
+<!-- REFERENCES -->
+<!-- MDN Docs. 2023. <form>: The Form element. Accessed on 1 September 2023 at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form -->
+<!-- MDN Docs. 2023. <fieldset>: The Field Set element. Accessed on 1 September 2023 at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset -->
+<!-- MDN Docs. 2023. <textarea>: The Textarea element. Accessed on 1 September 2023 at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea -->
+<!-- MDN Docs. 2023. <input type="submit">. Accessed on 1 September 2023 at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit -->
+<!-- -->

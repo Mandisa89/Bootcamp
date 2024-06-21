@@ -1,0 +1,74 @@
+Mandisa Macleod 
+11 January 2023
+
+
+L1T01
+
+Thinking Like A Programmer - Pseudo Code
+
+
+Compulsory Task 3
+
+3.1
+
+Plagiarism is using someone else's work, be it in small parts or as a whole, and posing it as your own original work. The problem is not finding good work to build your work on - the problem is not giving the original author/authors credit for it and not referencing your sources in the appropriate format. 
+
+The same applies to re-using work that you have done previously without citing the place where it was originally published. 
+
+
+
+3.2
+
+The four different types of plagiarism, according to the Hyperiondev Document titled "Additional Reading - Plagiarism Policy" (2021), are as follows:
+
+* Direct Plagiarism
+
+According to Hyperiondev, direct plagiarism is "the most obvious form of plagiarism". It is when you perform a "straight copy-paste" of the work, or even alter the wording of it somewhat [Hyperiondev, 2021]. 
+
+This would be a good example of plagiarising the original work, had I not cited the original source after I re-worded the information, and used quotation marks to indicate that I "straight copy-paste(d)" from the original text.
+
+
+
+
+* Self-plagiarism
+
+Self-plagiarism may not seem like plagiarism at first, since you are rewording or reusing work that is originally attributed to yourself. However, if that work has been expressed/shown/published in some way before, then the original material needs to be referenced and not be passed on as current original work. 
+
+An example would be writing an algorithm for a programme while employed at X today (something original and slightly that was a crucial step in a solution), using it again in a future project at Company Y, and not citing past-you as the source. Again, this is about original work that has been published somewhere sometime before, perhaps while employed somewhere, not so much about little home projects that never got published. 
+
+
+
+
+* Mosaic-Plagiarism
+
+Mosaic-plagiarism is a problem this piece of work does not run the risk of having, since I found the reading material Hyperiondev provided plenty informative for the point of this exercise. 
+
+Just like how one pieces together many different pre-existing bits of tile to make one whole new piece of work, mosaic plagiarism happens by rearranging and piecing together bits of other people's work to create your piece of work. It becomes plagiarism when no due credit is given to the original creators of the work you used to build yours on (Hyperiondev, 2021).
+
+An example would be a DJ creating a new song using the bassline from one song, the lyric chorus line from another, and a snippet of backing vocals from yet another song, without permission of the original artists, presenting it as his own original work .
+
+
+
+
+* Accidental Plagiarism
+
+This is, according to Hyperiondev, the "trickiest form of plagiarism". One would classify plagiarism as accidental if the person is presenting work as their own without even being completely conscious of the fact that it is not. 
+
+An example of this would be incorporating a guitar riff into a song you are writing, thinking you came up with it, not being aware that you actually heard it somewhere else first.
+
+
+
+3.3
+
+In order to avoid plagiarism in my work, I will use quotation marks to indicate when I am using someone's work verbatim. When paraphrasing, I will indicate my source by means of "according to" and "as XYZ said it". I will use inline referencing, and provide the full reference at the end of the document. I shall give credit where my work is not entirely my original work.
+
+
+
+Hyperiondev. (2021). Plagiarism Policy. Supplied Reading Material for Fullstack Web Development Bootcamp - Additional Reading for L1T1. Retrieved 11 January 2023, from 
+https://www.dropbox.com/home/MM22110005966/1%20-%20Web%20Development%20Essentials/L1T01?preview=Additional+Reading+-+Plagiarism+Policy.pdf
+
+
+
+
+
+

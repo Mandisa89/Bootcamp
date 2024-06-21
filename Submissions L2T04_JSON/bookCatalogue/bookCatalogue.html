@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Catalogue</title>
+  </head>
+  <body onload="uponLoad()">
+    <h2 id="changesHeading"></h2>
+    <form action="">
+      <label for="bookTitle">Enter the book title</label>
+      <input
+        type="text"
+        name="bookTitle"
+        id="bookTitle"
+        placeholder=""
+        required
+      />
+      <label for="authorFirstName">Author First Name</label>
+      <input
+        type="text"
+        name="authorFirstName"
+        id="authorFirstName"
+        placeholder="First Name"
+        required
+      />
+      <label for="authorLastName">Author Last Name</label>
+      <input
+        type="text"
+        name="authorLastName"
+        id="authorLastName"
+        placeholder="Last Name"
+        required
+      />
+      <label for="genre">Genre:</label>
+      <select name="genre" id="genre">
+        <option value="choices">--- Please choose the genre ---</option>
+        <option value="Adventure Fiction">Adventure Fiction</option>
+        <option value="Arts & New Media">Arts & New Media</option>
+        <option value="Biographies & Memoirs">Biographies & Memoirs</option>
+        <option value="Business Literature">Business Literature</option>
+        <option value="Children's Fiction">Children's Fiction</option>
+        <option value="Classic Literature">Classic Literature</option>
+        <option value="Classic Foreign Literature">
+          Classic Foreign Literature
+        </option>
+        <option value="Contemporary">Contemporary</option>
+        <option value="Crime">Crime</option>
+        <option value="Criticism">Criticism</option>
+        <option value="Detective Fiction">Detective Fiction</option>
+        <option value="Erotica">Erotica</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Health, Fitness & Dieting">
+          Health, Fitness & Dieting
+        </option>
+        <option value="Historical Fiction">Historical Fiction</option>
+        <option value="History">History</option>
+        <option value="Horror">Horror</option>
+        <option value="Humour & Entertainment">Humour & Entertainment</option>
+        <option value="LGBTQA+ Literature">LGBTQA+ Literature</option>
+        <option value="Modern Literature">Modern Literature</option>
+        <option value="Mystery, Thriller & Suspense">
+          Mystery, Thriller & Suspense
+        </option>
+        <option value="Nonfiction">Nonfiction</option>
+        <option value="Plays">Plays</option>
+        <option value="Poetry">Poetry</option>
+        <option value="Psychology">Psychology</option>
+        <option value="Religion">Religion</option>
+        <option value="Romance">Romance</option>
+        <option value="Science & Philosophy">Science & Philosophy</option>
+        <option value="Science Fiction">Science Fiction</option>
+        <option value="Self Help">Self Help</option>
+        <option value="Short Stories">Short Stories</option>
+        <option value="Spirituality">Spirituality</option>
+        <option value="Sports">Sports</option>
+        <option value="Travel">Travel</option>
+        <option value="Young Adult Fiction">Young Adult Fiction</option>
+      </select>
+      <p>Rating out of 5</p>
+
+      <input type="radio" name="rating" id="5" value="5" />
+      <label for="5">5</label><br />
+      <input type="radio" name="rating" id="4" value="4" />
+      <label for="4">4</label><br />
+      <input type="radio" name="rating" id="3" value="3" />
+      <label for="4">3</label><br />
+      <input type="radio" name="rating" id="2" value="2" />
+      <label for="2">2</label><br />
+      <input type="radio" name="rating" id="1" value="1" />
+      <label for="1">1</label><br />
+
+      <label for="review">Review</label>
+      <textarea name="review" id="review" rows="4" cols="50"></textarea>
+
+      <button id="mainButton" onclick="addBook()">Add new book to list</button>
+    </form>
+
+    <!-- Display list of books when there is more than 0 books in list -->
+    <!-- user must be able to edit and delete information about a chosen book -->
+
+    <div id="allBooks">
+      <h2>--- Your Book Catalogue ---</h2>
+    </div>
+
+    <script type="text/javascript" src="bookCatalogue.js"></script>
+  </body>
+</html>
+
+<!-- REFERENCES -->
+<!-- W3C Schools. 2023. HTML <input type="radio">. Retrieved on 25 July 2023 at https://www.w3schools.com/tags/att_input_type_radio.asp  -->
+<!-- W3C Schools. 2023. HTML <textarea> Tag. Retrieved on 25 July 2023 at https://www.w3schools.com/tags/tag_textarea.asp#:~:text=The%20element%20is%20often,attributes%20(or%20with%20CSS). -->
+<!-- BookAudio.online. 2023. List of genres alphabetically. Retrieved on 25 July 2023 at https://bookaudio.online/genres-->

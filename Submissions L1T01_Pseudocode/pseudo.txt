@@ -1,0 +1,55 @@
+Mandisa Macleod 
+11 January 2023
+
+
+L1T01
+
+Thinking Like A Programmer - Pseudo Code
+
+
+Compulsory Task 1
+
+1.1
+
+Pseudo code solution:
+
+	
+Ask user to enter random letter
+Repeat request until user inputs a number
+Determine how many of the letters were vowels
+Output total number of vowels
+
+
+
+1.2
+
+Pseudo code solution:
+
+Run through list of given numbers
+Discard from list any numbers that are not integers (whole numbers, no fractions)
+Integers may be positive, negative or equal to zero.
+Sort all even numbers into new list
+Sort all odd numbers into new list
+Return average of all even numbers
+Return average of all odd numbers
+
+
+
+1.3
+
+Pseudo code solution:
+
+Input list of random names
+Run through list to find all names starting with letter A
+Group all names starting with that letter
+Move group to top of new list
+Run through list to find all names starting with letter B
+Group all names starting with that letter
+Add group of names to current end of new list (so under Group A)
+
+Sidenote: 
+There should be a way to iterate through the list of names with n+1?
+If n= “A”, then n+1 would hopefully be “B”, n+2 would be “C”, etc.	
+
+
+

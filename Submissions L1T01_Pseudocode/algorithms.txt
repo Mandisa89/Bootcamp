@@ -1,0 +1,40 @@
+Mandisa Macleod 
+11 January 2023
+
+
+L1T01
+
+Thinking Like A Programmer - Pseudo Code
+
+
+Compulsory Task 2
+
+2.1
+
+Pseudo code solution:
+
+
+
+* Request user to input their first name
+* Repeat request if user inputs anything other than a series of letters
+* Store first name in variable called firstName
+* Output "Hello" + firstName (eg. Hello Susan)
+
+
+
+2.2
+
+Pseudo code solution:
+
+* Request user to input their age
+* Repeat request if user inputs anything other than integers
+* Store input in variable called age
+* Create variable called currentYear
+* Assign currentYear to the current year (eg. currentYear = 2023)
+* Output "Based on your age of [age] , it looks like you were born in [currentYear - age]."
+
+
+
+
+
+

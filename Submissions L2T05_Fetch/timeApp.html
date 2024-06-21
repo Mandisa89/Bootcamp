@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current Time App</title>
+  </head>
+  <body>
+    <header>
+      <h1>YOUR LOCAL TIME</h1>
+    </header>
+    <div id="timeDisplay"></div>
+
+    <h3>
+      <span id="hours"></span>:<span id="minutes"></span>:<span
+        id="seconds"
+      ></span>
+    </h3>
+
+    <script language="JavaScript">
+      // use getHours() and getMinutes() to get your current time instead of using an API call
+
+      function displayTime() {
+        //get current date
+        const todaysDate = new Date();
+
+        // extract current hour, minute and seconds
+        const hours = todaysDate.getHours();
+        const minutes = todaysDate.getMinutes();
+        const seconds = todaysDate.getSeconds();
+
+        // display the hours, minutes and seconds in the span elements of the corresponding ID
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+      }
+
+      // use setInterval to update time every second
+      setInterval(displayTime, 1000);
+    </script>
+  </body>
+</html>
+
+<!-- Stackoverflow, 2016. Get time from datetime format. Accessed on 23 August 2023 at https://stackoverflow.com/questions/38105042/get-time-from-datetime-format-->
+<!-- W3C Schools, 2023. Javascript Get Date Methods. Accessed on 23 August 2023 at https://www.w3schools.com/js/js_date_methods.asp -->
+<!-- W3C Schools, 2023. Date.prototype.getHours(). Accessed on 23 August 2023 at     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours-->
+<!-- W3C Schools, 2023. Window setInterval(). Accessed on 23 August 2023 at https://www.w3schools.com/jsref/met_win_setinterval.asp   -->

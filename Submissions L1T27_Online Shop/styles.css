@@ -1,0 +1,64 @@
+/*-----------------------*/
+/*       GENERAL         */
+/*-----------------------*/
+
+header {
+  border-bottom: solid 1px rgb(80, 121, 110);
+  margin: 60px;
+}
+
+h1 {
+  padding: 0px;
+  margin: 0px;
+  vertical-align: middle;
+}
+
+main {
+  margin: 10px;
+}
+
+footer {
+  border-top: solid 1px rgb(80, 121, 110);
+  margin: 60px;
+  padding: 20px;
+}
+
+/*-----------------------*/
+/*        IMAGES         */
+/*-----------------------*/
+.logo {
+  border: double 1px rgb(80, 121, 110);
+  border-radius: 30%;
+  margin: 5px;
+  padding: 4px;
+  height: auto;
+  width: 30px;
+  vertical-align: top;
+}
+
+main img:hover {
+  /* makes picture larger on hover */
+  transform: scale(1.01);
+}
+
+/*-----------------------*/
+/*        BUTTONS        */
+/*-----------------------*/
+
+.add-to-cart {
+  width: 100%;
+  height: auto;
+}
+
+.submit {
+  width: 50%;
+  height: auto;
+}
+
+/*-----------------------*/
+/*         FORM          */
+/*-----------------------*/
+
+label {
+  padding: 10px;
+}
